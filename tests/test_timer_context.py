@@ -63,7 +63,7 @@ def test_duration_consistency(sleep_time: float) -> None:
     """Test that duration in milliseconds is consistent with duration in nanoseconds."""
     with TimerContext() as timer:
         time.sleep(sleep_time)
-    greater_or_approximately_equal(timer.duration, timer.duration_ns / 1000)
+    assert pytest.approx(timer.duration) ==  timer.duration_ns / 1e6
 
 
 @hypothesis.given(sleep_time=sleep_time_strategy)
