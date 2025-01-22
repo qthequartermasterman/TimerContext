@@ -46,7 +46,7 @@ lint = [
     "mypy==1.14.0",
     "ruff==0.9.2",
     "toml-sort==0.24.2",
-    "typing_extensions==4.12.2; python_version < "3.11"",
+    'typing_extensions==4.12.2; python_version < "3.11"',
 ]
 test=[
     "hypothesis==6.124.2",
