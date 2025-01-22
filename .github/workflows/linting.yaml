@@ -11,6 +11,10 @@ env:
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
@@ -24,3 +28,8 @@ jobs:
       run: |
           uv pip install -e .[lint,test]
     - uses: pre-commit/action@v3.0.1
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      if: ${{ inputs.lint }}
+      with:
+        commit_message: 'style: pre-commit linting fixes'
+        add_options: "--no-verify"
