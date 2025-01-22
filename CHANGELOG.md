@@ -1,24 +1,6 @@
 # CHANGELOG
 
 
-## v0.2.0 (2025-01-22)
-
-### Code Style
-
-- Style fixes by ruff
-  ([`371c91a`](https://github.com/qthequartermasterman/TimerContext/commit/371c91ad0bde8e96f97debc93973acf330f0469b))
-
-### Features
-
-- Dependabot + initial release
-  ([`a922ad4`](https://github.com/qthequartermasterman/TimerContext/commit/a922ad449be56cb2ddc6146cb4ad890646e4d9f0))
-
-### Testing
-
-- Divide by correct scale factor for nano->milliseconds
-  ([`24dda74`](https://github.com/qthequartermasterman/TimerContext/commit/24dda74f8aa6281f60d454f3012eef16d3aa5639))
-
-
 ## v0.1.0 (2025-01-22)
 
 ### Bug Fixes
@@ -46,7 +28,16 @@
 - Precommit
   ([`0d2b3b5`](https://github.com/qthequartermasterman/TimerContext/commit/0d2b3b5f80521cc639a280add800da610f88e9b0))
 
+- Semantic release version updater
+  ([`eebd8e1`](https://github.com/qthequartermasterman/TimerContext/commit/eebd8e19964551404e2dd2c40e41e94123b8f460))
+
 ### Code Style
+
+- New lines
+  ([`b18abe4`](https://github.com/qthequartermasterman/TimerContext/commit/b18abe476a8c1af1d0517e308723e616cfa18ad5))
+
+- Style fixes by ruff
+  ([`371c91a`](https://github.com/qthequartermasterman/TimerContext/commit/371c91ad0bde8e96f97debc93973acf330f0469b))
 
 - Style fixes by ruff
   ([`7aa66e3`](https://github.com/qthequartermasterman/TimerContext/commit/7aa66e303f8e8ee2984df7238c5cda852830d434))
@@ -87,6 +78,9 @@
 
 ### Features
 
+- Dependabot + initial release
+  ([`a922ad4`](https://github.com/qthequartermasterman/TimerContext/commit/a922ad449be56cb2ddc6146cb4ad890646e4d9f0))
+
 - Initial implementation of TimerContext
   ([`91ee5ba`](https://github.com/qthequartermasterman/TimerContext/commit/91ee5ba33833d308cd68fa814ff7b630e9ca1933))
 
@@ -105,6 +99,9 @@
 
 - Allow wider range on tests for inaccuracies in time sleep
   ([`91fc610`](https://github.com/qthequartermasterman/TimerContext/commit/91fc610abc1567b09f4691940717d8bd45fdf863))
+
+- Divide by correct scale factor for nano->milliseconds
+  ([`24dda74`](https://github.com/qthequartermasterman/TimerContext/commit/24dda74f8aa6281f60d454f3012eef16d3aa5639))
 
 - Wider tolerance on timing tests
   ([`bb3e631`](https://github.com/qthequartermasterman/TimerContext/commit/bb3e631ddb581328b89259c5e556a66595331952))
