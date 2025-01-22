@@ -25,7 +25,7 @@ def test_duration_calculation(sleep_time: float) -> None:
     with TimerContext() as timer:
         time.sleep(sleep_time)
         duration = timer.duration
-        greater_or_approximately_equal(duration, sleep_time*1000)
+        greater_or_approximately_equal(sleep_time*1000, duration)
         time.sleep(sleep_time)
 
     assert pytest.approx(timer.duration, rel=0.1) == sleep_time * 2 / 1000
@@ -50,8 +50,8 @@ def test_nested_contexts(sleep_time_outer: float, sleep_time_inner: float) -> No
         time.sleep(sleep_time_outer)
         with TimerContext() as inner_timer:
             time.sleep(sleep_time_inner)
-        greater_or_approximately_equal(sleep_time_inner * 1000, inner_timer.duration)
-    greater_or_approximately_equal((sleep_time_outer + sleep_time_inner) * 1000, inner_timer.duration)
+        greater_or_approximately_equal(inner_timer.duration, sleep_time_inner * 1000)
+    greater_or_approximately_equal(outer_timer.duration, (sleep_time_outer + sleep_time_inner) * 1000)
 
 
 @hypothesis.given(sleep_time=sleep_time_strategy)
@@ -59,7 +59,7 @@ def test_duration_consistency(sleep_time: float) -> None:
     """Test that duration in milliseconds is consistent with duration in nanoseconds."""
     with TimerContext() as timer:
         time.sleep(sleep_time)
-    greater_or_approximately_equal(timer.duration_ns / 1000, timer.duration)
+    greater_or_approximately_equal(timer.duration, timer.duration_ns / 1000)
 
 
 @hypothesis.given(sleep_time=sleep_time_strategy)
@@ -73,4 +73,4 @@ def test_exception_handling(sleep_time: float) -> None:
         pass
     assert timer.end is not None
     assert pytest.approx(timer.duration, rel=0.1) == sleep_time * 1000
-    greater_or_approximately_equal(sleep_time * 1000, timer.duration)
+    greater_or_approximately_equal(timer.duration, sleep_time * 1000)
