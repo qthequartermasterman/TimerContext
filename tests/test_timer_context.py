@@ -7,9 +7,11 @@ import pytest
 # Define a common strategy for sleep times
 sleep_time_strategy = st.floats(min_value=1e-9, max_value=1e-2)
 
-def greater_or_approximately_equal(value: float, target: float, rel:float=0.1) -> None:
+
+def greater_or_approximately_equal(value: float, target: float, rel: float = 0.1) -> None:
     """Assert than value is greater than or approximately equal to target."""
     assert value > target or pytest.approx(target, rel) == value
+
 
 def test_initialization() -> None:
     """Test that TimerContext initializes correctly, setting start time and performance counter."""
@@ -25,7 +27,7 @@ def test_duration_calculation(sleep_time: float) -> None:
     with TimerContext() as timer:
         time.sleep(sleep_time)
         duration = timer.duration
-        greater_or_approximately_equal(sleep_time*1000, duration)
+        greater_or_approximately_equal(sleep_time * 1000, duration)
         time.sleep(sleep_time)
 
     assert pytest.approx(timer.duration, rel=0.1) == sleep_time * 2 / 1000
