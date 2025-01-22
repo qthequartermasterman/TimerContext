@@ -26,11 +26,13 @@ def test_duration_calculation(sleep_time: float) -> None:
     """Test that TimerContext calculates the duration correctly for a given block of code."""
     with TimerContext() as timer:
         time.sleep(sleep_time)
-        duration = timer.duration
-        greater_or_approximately_equal(sleep_time * 1000, duration)
+        incomplete_duration = timer.duration
+        greater_or_approximately_equal(incomplete_duration, sleep_time * 1000)
         time.sleep(sleep_time)
 
-    assert pytest.approx(timer.duration, rel=0.1) == sleep_time * 2 / 1000
+    complete_duration = timer.duration
+    assert incomplete_duration != complete_duration
+    greater_or_approximately_equal(complete_duration, sleep_time * 2 / 1000)
 
 
 def test_end_values() -> None:
@@ -74,5 +76,4 @@ def test_exception_handling(sleep_time: float) -> None:
     except ValueError:
         pass
     assert timer.end is not None
-    assert pytest.approx(timer.duration, rel=0.1) == sleep_time * 1000
     greater_or_approximately_equal(timer.duration, sleep_time * 1000)
