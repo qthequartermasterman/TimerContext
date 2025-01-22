@@ -24,6 +24,19 @@ class TimerContext:
         be the most accurate way to time a block of fast code, in the order of 
         single nanoseconds. For a slow block of code, the overhead should be 
         proportionally small.
+
+    Examples:
+        >>> import time
+        >>> with TimerContext() as operation_timer:
+        ...     print(operation_timer.start)
+        ...     print(operation_timer.duration)
+        ...     print(time.sleep(2))
+        ...     print(operation_timer.duration)
+        ... print(operation_timer.end)
+        ... print(operation_timer.duration)
+        ... time.sleep(2)
+        ... print(operation_timer.duration)
+
     """
 
     start: datetime.datetime
