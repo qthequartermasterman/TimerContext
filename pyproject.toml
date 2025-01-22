@@ -42,9 +42,10 @@ line-length = 120
 version = {attr = "timer_context.__version__"}
 
 [project.optional-dependencies]
-dev = [
-    "ruff==0.9.2",
+lint = [
     "mypy==1.14.0",
+    "ruff==0.9.2",
+    "toml-sort==0.24.2",
 ]
 test=[
     "hypothesis==6.124.2",
