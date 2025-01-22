@@ -78,4 +78,4 @@ class TimerContext:
     @property
     def duration(self) -> float:
         """The duration of the block of code, in milliseconds."""
-        return self.duration_ns / 1000
+        return self.duration_ns / 1e6
