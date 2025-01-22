@@ -56,10 +56,6 @@ jobs:
       if: ${{ inputs.lint }}
       with:
         commit_message: 'style: style fixes by ruff'
-    - name: Type check with Pyright
-      if: ${{ inputs.lint }}
-      run: |
-        pyright timer_context
     - name: Type check with Mypy
       if: ${{ inputs.lint }}
       run: |
