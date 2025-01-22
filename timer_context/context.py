@@ -3,16 +3,8 @@ import time
 import datetime
 from typing import Any
 
-try:
-    from typing import Self
-except ImportError:
-    try:
-        from typing_extensions import Self
-
-    except ImportError:
-        from typing import TypeAlias
-
-        Self: TypeAlias = "TimerContext"
+if TYPE_CHECKING:
+    from typing_extensions import Self
 
 
 class TimerContext:
