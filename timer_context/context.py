@@ -1,6 +1,18 @@
 from __future__ import annotations
 import time
 import datetime
+from typing import Any
+
+try:
+    from typing import Self
+except ImportError:
+    try: 
+        from typing_extensions import Self
+
+    except ImportError:
+        from typing import TypeAlias, TypeVar
+
+        Self: TypeAlias = "TimerContext"
 
 
 class TimerContext:
