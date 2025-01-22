@@ -1,6 +1,24 @@
 # CHANGELOG
 
 
+## v0.2.0 (2025-01-22)
+
+### Code Style
+
+- Style fixes by ruff
+  ([`371c91a`](https://github.com/qthequartermasterman/TimerContext/commit/371c91ad0bde8e96f97debc93973acf330f0469b))
+
+### Features
+
+- Dependabot + initial release
+  ([`a922ad4`](https://github.com/qthequartermasterman/TimerContext/commit/a922ad449be56cb2ddc6146cb4ad890646e4d9f0))
+
+### Testing
+
+- Divide by correct scale factor for nano->milliseconds
+  ([`24dda74`](https://github.com/qthequartermasterman/TimerContext/commit/24dda74f8aa6281f60d454f3012eef16d3aa5639))
+
+
 ## v0.1.0 (2025-01-22)
 
 ### Bug Fixes
