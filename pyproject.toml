@@ -43,9 +43,10 @@ version = {attr = "timer_context.__version__"}
 
 [tool.semantic_release]
 version_variables = [
-    "timer_context/__init__.py:__version__",
+    "timer_context/__init__.py:__version__py",
 ]
 build_command = "python -m pip install build && python -m build"
+allow_zero_version = false
 
 [project.optional-dependencies]
 lint = [
