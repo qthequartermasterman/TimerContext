@@ -33,7 +33,6 @@ repos:
       entry: mypy
       language: system
       types: [python]
-      args: [.]
     - id: toml-sort
       name: toml-sort
       entry: toml-sort
