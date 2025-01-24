@@ -1,12 +1,38 @@
 # CHANGELOG
 
 
-## v1.0.0 (2025-01-23)
+## v0.1.0 (2025-01-24)
+
+### Bug Fixes
+
+- Add type checking import
+  ([`3846505`](https://github.com/qthequartermasterman/TimerContext/commit/38465054484abaa671952c4522092793208f4c3b))
+
+- Use milliseconds not microseconds for duration
+  ([`8ac977c`](https://github.com/qthequartermasterman/TimerContext/commit/8ac977cd09a08efb96cb4f7588720c29e8651d6d))
 
 ### Build System
 
+- Add pyproject.toml
+  ([`de7de81`](https://github.com/qthequartermasterman/TimerContext/commit/de7de81161c35a03a882e48859474abb6b5dbe56))
+
+- Allow typing extensions as compile time dependency for type checking in older python
+  ([`26618fd`](https://github.com/qthequartermasterman/TimerContext/commit/26618fd176141d50b7362babc6897695c68700bf))
+
+- Allow typing extensions as compile time dependency for type checking in older python
+  ([`e65677e`](https://github.com/qthequartermasterman/TimerContext/commit/e65677e67597b77692621741686f89658bdd32b1))
+
+- Fix extra names
+  ([`d83f05a`](https://github.com/qthequartermasterman/TimerContext/commit/d83f05a1d5eec8d00387622478945af31d50c817))
+
+- Precommit
+  ([`0d2b3b5`](https://github.com/qthequartermasterman/TimerContext/commit/0d2b3b5f80521cc639a280add800da610f88e9b0))
+
 - Remove redundant mypy args
   ([`159c5e4`](https://github.com/qthequartermasterman/TimerContext/commit/159c5e4a3e8e64bd0d5aa285620e3baa35c1b0ee))
+
+- Semantic release version updater
+  ([`eebd8e1`](https://github.com/qthequartermasterman/TimerContext/commit/eebd8e19964551404e2dd2c40e41e94123b8f460))
 
 - **deps**: Bump actions/upload-artifact from 3 to 4
   ([`f4605d5`](https://github.com/qthequartermasterman/TimerContext/commit/f4605d5e315bf9ffe252d9dfd92a09b9ffc97ec1))
@@ -55,52 +81,6 @@ Signed-off-by: dependabot[bot] <support@github.com>
 - Line ends
   ([`61deda8`](https://github.com/qthequartermasterman/TimerContext/commit/61deda8894ffacf750675514d1754498577559b7))
 
-### Continuous Integration
-
-- Add build command to semantic release
-  ([`1a3916d`](https://github.com/qthequartermasterman/TimerContext/commit/1a3916d79e4e4710042b75c840618dae3797a837))
-
-- Commit changes from pre-commit in ci
-  ([`8d02c13`](https://github.com/qthequartermasterman/TimerContext/commit/8d02c13edffd1b5caca81ecbcf1831333f5a37b3))
-
-### Refactoring
-
-- :recycle: remove Self type hint for backward compatibility without introducing dependency
-  ([`a39e178`](https://github.com/qthequartermasterman/TimerContext/commit/a39e1789b080e45f0499fee958133f626343586e))
-
-
-## v0.1.0 (2025-01-22)
-
-### Bug Fixes
-
-- Add type checking import
-  ([`3846505`](https://github.com/qthequartermasterman/TimerContext/commit/38465054484abaa671952c4522092793208f4c3b))
-
-- Use milliseconds not microseconds for duration
-  ([`8ac977c`](https://github.com/qthequartermasterman/TimerContext/commit/8ac977cd09a08efb96cb4f7588720c29e8651d6d))
-
-### Build System
-
-- Add pyproject.toml
-  ([`de7de81`](https://github.com/qthequartermasterman/TimerContext/commit/de7de81161c35a03a882e48859474abb6b5dbe56))
-
-- Allow typing extensions as compile time dependency for type checking in older python
-  ([`26618fd`](https://github.com/qthequartermasterman/TimerContext/commit/26618fd176141d50b7362babc6897695c68700bf))
-
-- Allow typing extensions as compile time dependency for type checking in older python
-  ([`e65677e`](https://github.com/qthequartermasterman/TimerContext/commit/e65677e67597b77692621741686f89658bdd32b1))
-
-- Fix extra names
-  ([`d83f05a`](https://github.com/qthequartermasterman/TimerContext/commit/d83f05a1d5eec8d00387622478945af31d50c817))
-
-- Precommit
-  ([`0d2b3b5`](https://github.com/qthequartermasterman/TimerContext/commit/0d2b3b5f80521cc639a280add800da610f88e9b0))
-
-- Semantic release version updater
-  ([`eebd8e1`](https://github.com/qthequartermasterman/TimerContext/commit/eebd8e19964551404e2dd2c40e41e94123b8f460))
-
-### Code Style
-
 - New lines
   ([`b18abe4`](https://github.com/qthequartermasterman/TimerContext/commit/b18abe476a8c1af1d0517e308723e616cfa18ad5))
 
@@ -117,6 +97,12 @@ Signed-off-by: dependabot[bot] <support@github.com>
   ([`caa4296`](https://github.com/qthequartermasterman/TimerContext/commit/caa4296d1cc22204c97ba7dcad277bb2870f2586))
 
 ### Continuous Integration
+
+- Add build command to semantic release
+  ([`1a3916d`](https://github.com/qthequartermasterman/TimerContext/commit/1a3916d79e4e4710042b75c840618dae3797a837))
+
+- Commit changes from pre-commit in ci
+  ([`8d02c13`](https://github.com/qthequartermasterman/TimerContext/commit/8d02c13edffd1b5caca81ecbcf1831333f5a37b3))
 
 - Fix incorrect path
   ([`0a846f1`](https://github.com/qthequartermasterman/TimerContext/commit/0a846f14d3b94710aec5041b6a522727034ea205))
@@ -156,6 +142,9 @@ Signed-off-by: dependabot[bot] <support@github.com>
 
 - :recycle: :truck: move TimerContext to a new file to simplify __init__.py
   ([`2e24a83`](https://github.com/qthequartermasterman/TimerContext/commit/2e24a836c702443cbafd5aa6d4a051136a9db15a))
+
+- :recycle: remove Self type hint for backward compatibility without introducing dependency
+  ([`a39e178`](https://github.com/qthequartermasterman/TimerContext/commit/a39e1789b080e45f0499fee958133f626343586e))
 
 - Fix ruff
   ([`cd6b887`](https://github.com/qthequartermasterman/TimerContext/commit/cd6b887fd36d6500b997491820594cdbc71ecf09))
