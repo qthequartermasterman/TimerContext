@@ -1,6 +1,74 @@
 # CHANGELOG
 
 
+## v1.0.0 (2025-01-23)
+
+### Build System
+
+- Remove redundant mypy args
+  ([`159c5e4`](https://github.com/qthequartermasterman/TimerContext/commit/159c5e4a3e8e64bd0d5aa285620e3baa35c1b0ee))
+
+- **deps**: Bump actions/upload-artifact from 3 to 4
+  ([`f4605d5`](https://github.com/qthequartermasterman/TimerContext/commit/f4605d5e315bf9ffe252d9dfd92a09b9ffc97ec1))
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 3 to 4. - [Release
+  notes](https://github.com/actions/upload-artifact/releases) -
+  [Commits](https://github.com/actions/upload-artifact/compare/v3...v4)
+
+--- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-major
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump the lint-and-test group across 1 directory with 2 updates
+  ([`cf7bc0d`](https://github.com/qthequartermasterman/TimerContext/commit/cf7bc0d39ac5c193d6667c2b107cf956b00fcd2e))
+
+Bumps the lint-and-test group with 2 updates in the / directory:
+  [mypy](https://github.com/python/mypy) and [ruff](https://github.com/astral-sh/ruff).
+
+Updates `mypy` from 1.14.0 to 1.14.1 -
+  [Changelog](https://github.com/python/mypy/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/python/mypy/compare/v1.14.0...v1.14.1)
+
+Updates `ruff` from 0.9.2 to 0.9.3 - [Release notes](https://github.com/astral-sh/ruff/releases) -
+  [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/astral-sh/ruff/compare/0.9.2...0.9.3)
+
+--- updated-dependencies: - dependency-name: mypy dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+dependency-group: lint-and-test
+
+- dependency-name: ruff dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+### Code Style
+
+- Line ends
+  ([`61deda8`](https://github.com/qthequartermasterman/TimerContext/commit/61deda8894ffacf750675514d1754498577559b7))
+
+### Continuous Integration
+
+- Add build command to semantic release
+  ([`1a3916d`](https://github.com/qthequartermasterman/TimerContext/commit/1a3916d79e4e4710042b75c840618dae3797a837))
+
+- Commit changes from pre-commit in ci
+  ([`8d02c13`](https://github.com/qthequartermasterman/TimerContext/commit/8d02c13edffd1b5caca81ecbcf1831333f5a37b3))
+
+### Refactoring
+
+- :recycle: remove Self type hint for backward compatibility without introducing dependency
+  ([`a39e178`](https://github.com/qthequartermasterman/TimerContext/commit/a39e1789b080e45f0499fee958133f626343586e))
+
+
 ## v0.1.0 (2025-01-22)
 
 ### Bug Fixes
