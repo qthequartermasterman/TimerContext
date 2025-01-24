@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.0.0 (2025-01-24)
+
+### Bug Fixes
+
+- Bump version
+  ([`46abf12`](https://github.com/qthequartermasterman/TimerContext/commit/46abf12ff23ac6c6323f581862dd3959148b6a11))
+
+
 ## v0.1.0 (2025-01-24)
 
 ### Bug Fixes
