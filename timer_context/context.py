@@ -1,10 +1,7 @@
 from __future__ import annotations
 import time
 import datetime
-from typing import Any, TYPE_CHECKING
-
-if TYPE_CHECKING:
-    from typing_extensions import Self
+from typing import Any
 
 
 class TimerContext:
@@ -47,7 +44,7 @@ class TimerContext:
     end: datetime.datetime | None
     end_counter: int | None
 
-    def __enter__(self) -> Self:
+    def __enter__(self) -> TimerContext:
         self.end = None
         self.end_counter = None
         # Start the counter last because datetime.datetime.now() takes longer
