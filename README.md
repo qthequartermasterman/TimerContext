@@ -50,9 +50,9 @@ Any code inside of the context manager will contribute to the duration. As soon 
 
 ## Notice on Resolution
 
-The duration is always calculated using `time.perf_counter_ns` and then converted to milliseconds as a float. The precision of this timer is limited by the resolution of the performance counter on your particular environment. 
+The duration is always calculated using `time.perf_counter_ns` and then converted to milliseconds as a float. The precision of this timer is limited by the resolution of the performance counter on your particular environment.
 
-The precision is also limited by the overhead of calling a context manager. If your context is exceptionally fast (on the order of single nanoseconds), this overhead is non-neglible, and you would be better served by calling `time.perf_counter_ns` directly. For any block that runs for longer than that, the overhead is proportionally small/negligible. 
+The precision is also limited by the overhead of calling a context manager. If your context is exceptionally fast (on the order of single nanoseconds), this overhead is non-negligible, and you would be better served by calling `time.perf_counter_ns` directly. For any block that runs for longer than that, the overhead is proportionally small/negligible.
 
 Because the counter used for duration is set after defining `timer.start` and before defining `timer.end`, `timer.duration` might not exactly equal `timer.end-timer.start`, generally. The times used for `start` and `end` are lower resolution than the performance counter for the duration. Thus, they should generally only be used for reference, and not for calculating a duration.
 
