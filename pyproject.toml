@@ -55,7 +55,7 @@ lint = [
     "toml-sort==0.24.2",
 ]
 test=[
-    "hypothesis==6.124.2",
+    "hypothesis==6.124.7",
     "pytest==8.3.4",
     "pytest-cov==6.0.0",
 ]
