@@ -58,7 +58,7 @@ Because the counter used for duration is set after defining `timer.start` and be
 
 ## Comparison with `timeit` and `cProfile`.
 
-Timing/profiling Python code is generally done with the [`timeit`](https://docs.python.org/3/library/timeit.html) and/or [`cProfile](https://docs.python.org/3/library/profile.html) modules in the standard library. These are both great tools, and may be better suited for your task.
+Timing/profiling Python code is generally done with the [`timeit`](https://docs.python.org/3/library/timeit.html) and/or [`cProfile`](https://docs.python.org/3/library/profile.html) modules in the standard library. These are both great tools, and may be better suited for your task.
 
 You should use `timeit` if:
 - You need statistics on runtime by running an identical code snippet many times.
@@ -74,4 +74,4 @@ You should use `TimerContext` if:
 
 ## Contributing
 
-Please open an Issue if you find a bug or would like to request a feature. Bugs are generally fixed promptly. Because of `ContextTimer`'s goal of being a radically simple interface, complex feature requests will likely be closed, but genuine improvements that do not sacrifice the vision of simplicity may be considered. We recommend opening an issue to discuss new features before opening a Pull Request. Pull Requests for bug fixes are always welcome.
+Please open an Issue if you find a bug or would like to request a feature. Bugs are generally fixed promptly. Because of `TimerContext`'s goal of being a radically simple interface, complex feature requests will likely be closed, but genuine improvements that do not sacrifice the vision of simplicity may be considered. We recommend opening an issue to discuss new features before opening a Pull Request. Pull Requests for bug fixes are always welcome.
