@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.1.1 (2025-02-14)
+
+### Bug Fixes
+
+- Version variable should update
+  ([`0a4ce3a`](https://github.com/qthequartermasterman/TimerContext/commit/0a4ce3a430810bbc4130cb6ee493ec4e83af50e4))
+
+
 ## v1.1.0 (2025-02-14)
 
 ### Build System
