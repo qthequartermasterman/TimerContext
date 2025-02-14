@@ -65,6 +65,14 @@ class TimerContext:
         return (self.end_counter or time.perf_counter_ns()) - self.start_counter
 
     @property
-    def duration(self) -> float:
+    def duration_ms(self) -> float:
         """The duration of the block of code, in milliseconds."""
         return self.duration_ns / 1e6
+
+    @property
+    def duration(self) -> datetime.timedelta:
+        """The duration of the block of code.
+
+        Precision is limited by the precision of `datetime.timedelta`.
+        """
+        return datetime.timedelta(microseconds=self.duration_ns / 1e3)
