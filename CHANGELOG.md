@@ -1,6 +1,121 @@
 # CHANGELOG
 
 
+## v1.1.0 (2025-02-14)
+
+### Build System
+
+- **deps**: Bump dawidd6/action-download-artifact from 7 to 8
+  ([`a8af558`](https://github.com/qthequartermasterman/TimerContext/commit/a8af55814a12b1400f0ad0fc3b8d1d26858ed2ec))
+
+Bumps [dawidd6/action-download-artifact](https://github.com/dawidd6/action-download-artifact) from 7
+  to 8. - [Release notes](https://github.com/dawidd6/action-download-artifact/releases) -
+  [Commits](https://github.com/dawidd6/action-download-artifact/compare/v7...v8)
+
+--- updated-dependencies: - dependency-name: dawidd6/action-download-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-major ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump hypothesis in the lint-and-test group
+  ([`4f63627`](https://github.com/qthequartermasterman/TimerContext/commit/4f63627d6eb120cfa39f95b164a52f671e4902cd))
+
+Bumps the lint-and-test group with 1 update:
+  [hypothesis](https://github.com/HypothesisWorks/hypothesis).
+
+Updates `hypothesis` from 6.124.2 to 6.124.7 - [Release
+  notes](https://github.com/HypothesisWorks/hypothesis/releases) -
+  [Commits](https://github.com/HypothesisWorks/hypothesis/compare/hypothesis-python-6.124.2...hypothesis-python-6.124.7)
+
+--- updated-dependencies: - dependency-name: hypothesis dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+dependency-group: lint-and-test ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump the lint-and-test group with 2 updates
+  ([`bcb39d4`](https://github.com/qthequartermasterman/TimerContext/commit/bcb39d44825bb618231c04d550db0576474addd1))
+
+Bumps the lint-and-test group with 2 updates: [ruff](https://github.com/astral-sh/ruff) and
+  [hypothesis](https://github.com/HypothesisWorks/hypothesis).
+
+Updates `ruff` from 0.9.3 to 0.9.4 - [Release notes](https://github.com/astral-sh/ruff/releases) -
+  [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/astral-sh/ruff/compare/0.9.3...0.9.4)
+
+Updates `hypothesis` from 6.124.7 to 6.125.1 - [Release
+  notes](https://github.com/HypothesisWorks/hypothesis/releases) -
+  [Commits](https://github.com/HypothesisWorks/hypothesis/compare/hypothesis-python-6.124.7...hypothesis-python-6.125.1)
+
+--- updated-dependencies: - dependency-name: ruff dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+dependency-group: lint-and-test
+
+- dependency-name: hypothesis dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+dependency-group: lint-and-test ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump the lint-and-test group with 3 updates
+  ([`9e69e9f`](https://github.com/qthequartermasterman/TimerContext/commit/9e69e9fcda1138553086c5b327a1ac58bd35be2b))
+
+Bumps the lint-and-test group with 3 updates: [mypy](https://github.com/python/mypy),
+  [ruff](https://github.com/astral-sh/ruff) and
+  [hypothesis](https://github.com/HypothesisWorks/hypothesis).
+
+Updates `mypy` from 1.14.1 to 1.15.0 -
+  [Changelog](https://github.com/python/mypy/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/python/mypy/compare/v1.14.1...v1.15.0)
+
+Updates `ruff` from 0.9.4 to 0.9.6 - [Release notes](https://github.com/astral-sh/ruff/releases) -
+  [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/astral-sh/ruff/compare/0.9.4...0.9.6)
+
+Updates `hypothesis` from 6.125.1 to 6.125.2 - [Release
+  notes](https://github.com/HypothesisWorks/hypothesis/releases) -
+  [Commits](https://github.com/HypothesisWorks/hypothesis/compare/hypothesis-python-6.125.1...hypothesis-python-6.125.2)
+
+--- updated-dependencies: - dependency-name: mypy dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+dependency-group: lint-and-test
+
+- dependency-name: ruff dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+- dependency-name: hypothesis dependency-type: direct:production
+
+dependency-group: lint-and-test ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+### Documentation
+
+- Fix readme typos
+  ([`d959320`](https://github.com/qthequartermasterman/TimerContext/commit/d9593206191888e21040dd1466a1fc1b6db13895))
+
+### Features
+
+- Duration now passes a timedelta object
+  ([`ca24910`](https://github.com/qthequartermasterman/TimerContext/commit/ca2491044d76fc6191cad2228a87f9acb5f6a5ce))
+
+### Testing
+
+- :white_check_mark: add duration timedelta test case
+  ([`a44c321`](https://github.com/qthequartermasterman/TimerContext/commit/a44c3219d4d9775eae09a386ec4b1aa87b56d581))
+
+
 ## v1.0.0 (2025-01-24)
 
 ### Bug Fixes
@@ -52,9 +167,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -80,7 +193,7 @@ dependency-group: lint-and-test
 
 - dependency-name: ruff dependency-type: direct:production
 
-...
+dependency-group: lint-and-test ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
