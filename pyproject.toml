@@ -51,11 +51,11 @@ allow_zero_version = false
 [project.optional-dependencies]
 lint = [
     "mypy==1.15.0",
-    "ruff==0.11.4",
+    "ruff==0.11.5",
     "toml-sort==0.24.2",
 ]
 test=[
-    "hypothesis==6.130.9",
+    "hypothesis==6.131.0",
     "pytest==8.3.5",
     "pytest-cov==6.1.1",
 ]
