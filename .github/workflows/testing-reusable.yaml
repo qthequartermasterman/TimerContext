@@ -62,7 +62,7 @@ jobs:
         mypy timer_context
 
     - name: Download example database
-      uses: dawidd6/action-download-artifact@v9
+      uses: dawidd6/action-download-artifact@v10
       with:
         name: hypothesis-example-db
         path: .hypothesis/examples
