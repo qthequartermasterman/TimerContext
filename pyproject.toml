@@ -51,7 +51,7 @@ allow_zero_version = false
 [project.optional-dependencies]
 lint = [
     "mypy==1.19.1",
-    "ruff==0.15.15",
+    "ruff==0.15.16",
     "toml-sort==0.24.4",
 ]
 test=[
